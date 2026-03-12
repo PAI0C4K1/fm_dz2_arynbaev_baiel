@@ -1,4 +1,4 @@
-//lesson 1
+//dz 1
 //part A
 const gmailInput = document.querySelector("#gmail_input");
 const gmailButton = document.querySelector("#gmail_button");
@@ -42,13 +42,15 @@ gmailButton.addEventListener("click", () => {
 
 // moveBlock();
 
-//lesson 1
+//dz 2
 //move block V2
 const parentBlock = document.querySelector(".parent_block")
 const childBlock = document.querySelector(".child_block")
 
 let posX = 0, posY = 0;
+
 let disX = 1, disY = 0;
+
 const speed = 2;
 
 function move() {
@@ -60,7 +62,7 @@ function move() {
     }
 
     if (posY + disY * speed > fixedParentHeight || posY + disY * speed < 0) {
-        [disX, disY] = [-dy, 0];
+        [disX, disY] = [-disY, 0];
     }
 
     posX += disX * speed;
@@ -77,9 +79,8 @@ move();
 //part Timer
 
 let alrdGo = null;
-
+    
 const time = document.querySelector("#seconds")
-
 
 document.querySelector("#start").onclick = () => {
     if (alrdGo != null) return;
@@ -96,3 +97,36 @@ document.querySelector("#reset").onclick = () => {
     alrdGo = null
     time.innerHTML = 0
 }
+//dz3
+
+//dz4
+const charactersList = document.querySelector(".characters-list")
+
+const request = new XMLHttpRequest()
+
+request.open("GET", "../data/characters.json")
+request.send()
+
+request.onload = () => {
+
+    const characters = JSON.parse(request.response)
+
+    characters.forEach(character => {
+
+        const card = document.createElement("div")
+        card.classList.add("character-card")
+
+        card.innerHTML = `
+            <div class="character-photo">
+                <img src="${character.image}" alt="${character.name}">
+            </div>
+            <h3>${character.name}</h3>
+            <p>Возраст: ${character.age}</p>
+            <p>Профессия: ${character.job}</p>
+        `
+
+        charactersList.appendChild(card)
+
+    })
+
+}   

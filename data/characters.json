@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Джеймс Сандерленд",
+    "age": 29,
+    "job": "Клерк",
+    "image": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzF0aTF1Z2V1MTZzeGtzOTBpOWZvc2ltY293amszeGZuZWtiMXM3ZiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/OQUQhxpxImEm2vBMOc/giphy.gif"
+  },
+  {
+    "name": "Мэри Шепард-Сандерленд",
+    "age": 25,
+    "job": "Домохозяйка",
+    "image": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWI1dmp1YjFtdmYwN3FiejdwdTh5OWk0bWNiOHhicXVlaWdmcnFtYSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/MPvH8otitlUCE6GBsw/giphy.gif"
+  },
+  {
+    "name": "Мария",
+    "age": 25,
+    "job": "Танцовщица ",
+    "image": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWVtOG1sY2U2N21hMGVtd2lrdTRhZ294em9lZHNtMXk1c3libzB6dSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/nONJHuGeic4VT0aefX/giphy.gif"
+  }
+]
